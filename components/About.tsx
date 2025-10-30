@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { MapPin, Mail, MessageCircle } from 'lucide-react';
-import Image from 'next/image';
+import { motion } from "framer-motion";
+import { MapPin, Mail, MessageCircle } from "lucide-react";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -28,38 +28,40 @@ const About = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-4">Desenvolvedor Back-End</h3>
+            <h3 className="text-2xl font-bold mb-4">Desenvolvedor Frontend</h3>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Como desenvolvedor Back-end, possuo experiência em várias aplicações, 
-              automações inteligentes e soluções escaláveis. Além de desenvolver APIs e 
-              fluxos de automação com n8n, trabalho com Node.js, TypeScript, WordPress, 
-              PHP e Python.
+              Sou desenvolvedor front-end com 2 anos de experiência, apaixonado
+              por criar interfaces modulares, responsivas e de alto desempenho.
+              Desde jovem, sempre fui fascinado por tecnologia e, aos 17 anos,
+              comecei a me dedicar à programação, encontrando minha verdadeira
+              vocação.
             </p>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Possuo expertise em Docker e bancos de dados como PostgreSQL/MySQL, além de um 
-              conhecimento sólido em front-end. Minha jornada no desenvolvimento me 
-              permitiu trabalhar em diversos projetos desafiadores, desde sistemas de 
-              automação com IA até plataformas SaaS completas.
+              Autodidata e disciplinado, busco evolução contínua em todos os
+              aspectos da vida — profissional, mental e espiritual. Atualmente
+              atuo em múltiplos projetos na Hávira e em trabalhos próprios,
+              utilizando tecnologias como TypeScript, Next.js, Tailwind, ShadCN,
+              Chakra UI e Redux para entregar soluções escaláveis e eficientes.
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-300">
                 <MapPin className="text-primary-500" size={20} />
-                <span>Feira de Santana - BA, Brasil</span>
+                <span>Carlos Barbosa - RS, Brasil</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <Mail className="text-primary-500" size={20} />
-                <a 
-                  href="mailto:contato@gustavocristovam.dev" 
+                <a
+                  href="mailto:kleincoder@gmail.com"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  contato@gustavocristovam.dev
+                  kleincoder@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <MessageCircle className="text-primary-500" size={20} />
-                <a 
-                  href="https://wa.me/5573999113421" 
-                  target="_blank" 
+                <a
+                  href="https://wa.me/5554993202107"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary-400 transition-colors"
                 >
@@ -69,7 +71,7 @@ const About = () => {
             </div>
           </motion.div>
 
-           {/* Image */}
+          {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -80,7 +82,7 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-800 rounded-full blur-3xl opacity-30 animate-pulse"></div>
               <Image
                 src="/images/perfil.png"
-                alt="Gustavo Cristovam"
+                alt="João Pedro Klein Previdi"
                 width={400}
                 height={400}
                 className="relative rounded-full shadow-2xl hover:scale-105 transition-transform duration-300"

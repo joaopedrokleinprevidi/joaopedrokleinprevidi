@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -12,23 +12,23 @@ const Header = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Sobre', href: '#about' },
-    { name: 'Experiência', href: '#experience' },
-    { name: 'Projetos', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Avaliações', href: '#reviews' },
+    { name: "Home", href: "#home" },
+    { name: "Sobre", href: "#about" },
+    { name: "Experiência", href: "#experience" },
+    // { name: "Projetos", href: "#projects" },
+    { name: "Skills", href: "#skills" },
+    // { name: "Avaliações", href: "#reviews" },
   ];
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
     }
   };
@@ -37,8 +37,8 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-dark-900/95 backdrop-blur-md shadow-lg'
-          : 'bg-transparent'
+          ? "bg-dark-900/95 backdrop-blur-md shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <nav className="container mx-auto px-6 py-4">
@@ -48,10 +48,10 @@ const Header = () => {
             className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection('#home');
+              scrollToSection("#home");
             }}
           >
-            gustavocristovam.dev
+            joaopedrokleinprevidi.dev
           </a>
 
           {/* Desktop Navigation */}

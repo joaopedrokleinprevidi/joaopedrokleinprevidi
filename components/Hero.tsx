@@ -1,19 +1,37 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Instagram, FileText, MessageCircle } from 'lucide-react';
-import Image from 'next/image';
+import { motion } from "framer-motion";
+import {
+  Github,
+  Linkedin,
+  Instagram,
+  FileText,
+  MessageCircle,
+  Mail,
+} from "lucide-react";
+import Image from "next/image";
 
 const Hero = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/gustavocristovam', label: 'Github' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/gustavo-cristovam/', label: 'LinkedIn' },
-    { icon: Instagram, href: 'https://www.instagram.com/gcristovam_/', label: 'Instagram' },
-    { icon: FileText, href: '/images/GUSTAVO CRISTOVAM.pdf', label: 'Currículo' },
+    {
+      icon: Github,
+      href: "https://github.com/joaopedrokleinprevidi",
+      label: "Github",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/joaopedrokleinprevidi/",
+      label: "LinkedIn",
+    },
+    { icon: Mail, href: "mailto:kleincoder@gmail.com", label: "Email" },
+    // { icon: FileText, href: '/images/GUSTAVO CRISTOVAM.pdf', label: 'Currículo' },
   ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-6">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center pt-20 px-6"
+    >
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,14 +39,14 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Olá! Me chamo{' '}
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 flex flex-col">
+            <span>Olá! Me chamo </span>
             <span className="bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
-              Gustavo Cristovam
+              João Pedro Klein Previdi
             </span>
           </h1>
           <p className="text-xl md:text-3xl text-gray-400 mb-10">
-            Desenvolvedor Back-End
+            Desenvolvedor Frontend
           </p>
 
           {/* Social Links */}
@@ -52,7 +70,7 @@ const Hero = () => {
 
           {/* CTA Button */}
           <motion.a
-            href="https://wa.me/5573999113421"
+            href="https://wa.me/5554993202107"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-primary-500/50"
@@ -75,7 +93,9 @@ const Hero = () => {
               className="text-gray-500 hover:text-primary-400 transition-colors duration-200 inline-block"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
+                document
+                  .querySelector("#about")
+                  ?.scrollIntoView({ behavior: "smooth" });
               }}
             >
               <span className="text-sm block mb-2">Veja meu trabalho</span>

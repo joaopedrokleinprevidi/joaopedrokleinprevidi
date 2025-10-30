@@ -1,47 +1,33 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { Briefcase, GraduationCap } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Briefcase, GraduationCap } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
     {
-      title: 'Desenvolvedor Full-Stack',
-      company: 'Freelancer',
-      period: 'Jan 2023 - Presente',
-      description: 'Criação/Implementação de APIs em Python. Automações inteligentes em Python. Desenvolvimento de websites em HTML, CSS e JavaScript. Criação de Plugins personalizados para WordPress (PHP). Automações utilizando N8n. Criação de chatbots com IA.',
-      type: 'work',
+      title: "Desenvolvedor Frontend",
+      company: "Hávira",
+      period: "Jun 2024 - Presente",
+      description:
+        "Atuação como desenvolvedor front-end na criação de interfaces modulares, responsivas e de alto desempenho, utilizando tecnologias modernas como React, Next.js e TypeScript. Responsável por colaborar com equipes multidisciplinares no desenvolvimento de soluções escaláveis e eficientes, aplicando boas práticas de Clean Code, versionamento com Git e metodologias ágeis.",
+      type: "work",
       highlights: [
-        'APIs em Python',
-        'Automações inteligentes',
-        'Plugins WordPress',
-        'Chatbots com IA',
-        'N8n Workflows'
-      ]
-    },
-    {
-      title: 'Desenvolvedor de Soluções Automatizadas com IA',
-      company: 'Castelo Branco Contabilidade Avançada',
-      period: 'Mai 2025 - Jun 2025',
-      description: 'Desenvolvimento de soluções automatizadas com inteligência artificial. Engenharia de prompt e automação de processos via n8n. Implementação de sistemas escaláveis com Docker, Supabase e Evolution API. Integração entre setores para otimizar processos internos e aumentar a eficiência. Automações de processos com Web Scraping usando Python.',
-      type: 'work',
-      highlights: [
-        'Automação com IA',
-        'Engenharia de Prompt',
-        'Docker & Supabase',
-        'Evolution API',
-        'Web Scraping'
-      ]
+        "SSR Avançado com Next.js",
+        "Integração com múltiplos projetos",
+        "Atuando em equipes multidisciplinares",
+      ],
     },
   ];
 
   const education = [
     {
-      title: 'Bacharel em Sistemas de Informação',
-      institution: 'UNEX - Centro Universitário de Excelência',
-      period: 'Jan 2025 - Dez 2028',
-      description: 'Formação em Sistemas de Informação com foco em desenvolvimento de software, arquitetura de sistemas e tecnologias modernas.',
-      type: 'education',
+      title: "Escola Britânica de Artes Criativas & Tecnologia (EBAC)",
+      institution: "Curso Profissionalizante - 120 horas",
+      period: "Fev 2023 - Ago 2023",
+      description:
+        "Formação pela EBAC – Escola Britânica de Artes Criativas & Tecnologia, com foco em aprendizado prático, projetos reais e desenvolvimento de habilidades avançadas em tecnologia e inovação.",
+      type: "education",
     },
   ];
 
@@ -138,7 +124,9 @@ const Experience = () => {
                     <h4 className="text-xl font-bold text-white mt-2 mb-1">
                       {edu.title}
                     </h4>
-                    <p className="text-gray-400 text-sm mb-3">{edu.institution}</p>
+                    <p className="text-gray-400 text-sm mb-3">
+                      {edu.institution}
+                    </p>
                     <p className="text-gray-500 text-sm leading-relaxed">
                       {edu.description}
                     </p>

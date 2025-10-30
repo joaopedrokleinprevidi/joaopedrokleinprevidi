@@ -1,15 +1,23 @@
-'use client';
+"use client";
 
-import { Github, Linkedin, Instagram, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/gustavocristovam', label: 'Github' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/gustavo-cristovam/', label: 'LinkedIn' },
-    { icon: Instagram, href: 'https://www.instagram.com/gcristovam_/', label: 'Instagram' },
-    { icon: Mail, href: 'mailto:contato@gustavocristovam.dev', label: 'Email' },
+    {
+      icon: Github,
+      href: "https://github.com/joaopedrokleinprevidi",
+      label: "Github",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/joaopedrokleinprevidi/",
+      label: "LinkedIn",
+    },
+
+    { icon: Mail, href: "mailto:kleincoder@gmail.com", label: "Email" },
   ];
 
   return (
@@ -19,18 +27,22 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent mb-4">
-              gustavocristovam.dev
+              joaopedrokleinprevidi.dev
             </h3>
             <p className="text-gray-400 text-sm">
-              Desenvolvedor Back-End especializado em automações inteligentes e soluções escaláveis.
+              Desenvolvedor Front-end especializado em eficiência e alta
+              responsividade, atuando em equipe multidisciplinares oferecendo
+              soluções escaláveis.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Links Rápidos</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">
+              Links Rápidos
+            </h4>
             <ul className="space-y-2">
-              {['Home', 'Sobre', 'Projetos', 'Skills', 'Contato'].map((item) => (
+              {["Home", "Sobre", "Skills", "Contato"].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
@@ -45,7 +57,9 @@ const Footer = () => {
 
           {/* Social Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Redes Sociais</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">
+              Redes Sociais
+            </h4>
             <div className="flex gap-4">
               {socialLinks.map((link) => (
                 <a
@@ -56,7 +70,10 @@ const Footer = () => {
                   className="p-3 bg-dark-800 rounded-lg hover:bg-primary-600 transition-colors duration-300 group"
                   aria-label={link.label}
                 >
-                  <link.icon size={20} className="text-gray-400 group-hover:text-white" />
+                  <link.icon
+                    size={20}
+                    className="text-gray-400 group-hover:text-white"
+                  />
                 </a>
               ))}
             </div>
@@ -66,8 +83,9 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-dark-800 text-center">
           <p className="text-gray-400 text-sm flex items-center justify-center gap-2">
-            © {currentYear} Gustavo Cristovam. Feito com{' '}
-            <Heart size={16} className="text-primary-500 fill-primary-500" /> e Next.js
+            © {currentYear} João Pedro Klein Previdi. Feito com{" "}
+            <Heart size={16} className="text-primary-500 fill-primary-500" /> e
+            Next.js
           </p>
         </div>
       </div>
