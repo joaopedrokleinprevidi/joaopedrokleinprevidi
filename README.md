@@ -18,7 +18,7 @@
 
 ### 🔗 Links
 
-- 🌐 **Portfólio:** https://joaopedrokleinprevidi.com.br
+- 🌐 **Portfólio:** https://www.joaopedrokleinprevidi.com.br
 
 ---
 
