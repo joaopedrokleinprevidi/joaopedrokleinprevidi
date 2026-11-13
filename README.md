@@ -1,6 +1,6 @@
 ### 👋 Prazer, me chamo **João Pedro Klein Previdi**
 
-**Front-end Developer** • **2 anos de experiência**  
+**Front-end Developer** • **3 anos de experiência**  
 📍 *Carlos Barbosa – RS, Brasil*
 
 [**Hávira**](https://www.linkedin.com/company/havira/posts/?feedView=all) - Jun/2024 - Presente
